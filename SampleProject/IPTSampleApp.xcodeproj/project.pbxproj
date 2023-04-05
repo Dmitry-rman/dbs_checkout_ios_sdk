@@ -18,21 +18,21 @@
 		0A3B864929DD844A00C85FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B864729DD844A00C85FA8 /* Main.storyboard */; };
 		0A3B864B29DD844B00C85FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B864A29DD844B00C85FA8 /* Assets.xcassets */; };
 		0A3B864E29DD844B00C85FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B864C29DD844B00C85FA8 /* LaunchScreen.storyboard */; };
-		0A3B866429DD937500C85FA8 /* IPTCheckoutSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3B866229DD937400C85FA8 /* IPTCheckoutSDK.xcframework */; };
-		0A3B866529DD937500C85FA8 /* IPTCheckoutSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3B866229DD937400C85FA8 /* IPTCheckoutSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0A3B866629DD937500C85FA8 /* IPTCheckoutCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3B866329DD937400C85FA8 /* IPTCheckoutCore.xcframework */; };
-		0A3B866729DD937500C85FA8 /* IPTCheckoutCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3B866329DD937400C85FA8 /* IPTCheckoutCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A84AFC729DDBA0600C1F384 /* IPTCheckoutCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84AFC529DDBA0500C1F384 /* IPTCheckoutCore.xcframework */; };
+		0A84AFC829DDBA0600C1F384 /* IPTCheckoutCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84AFC529DDBA0500C1F384 /* IPTCheckoutCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A84AFC929DDBA0600C1F384 /* IPTCheckoutSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84AFC629DDBA0600C1F384 /* IPTCheckoutSDK.xcframework */; };
+		0A84AFCA29DDBA0600C1F384 /* IPTCheckoutSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84AFC629DDBA0600C1F384 /* IPTCheckoutSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0A3B866829DD937500C85FA8 /* Embed Frameworks */ = {
+		0A84AFCB29DDBA0600C1F384 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0A3B866729DD937500C85FA8 /* IPTCheckoutCore.xcframework in Embed Frameworks */,
-				0A3B866529DD937500C85FA8 /* IPTCheckoutSDK.xcframework in Embed Frameworks */,
+				0A84AFCA29DDBA0600C1F384 /* IPTCheckoutSDK.xcframework in Embed Frameworks */,
+				0A84AFC829DDBA0600C1F384 /* IPTCheckoutCore.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,8 +45,6 @@
 		0A17928229CDCB7B00CCBD12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A17928429CDCB7D00CCBD12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A17928729CDCB7D00CCBD12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0A17928F29CDCC9F00CCBD12 /* IPTCheckoutSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IPTCheckoutSDK.xcframework; path = ../IPTCheckoutSDK.xcframework; sourceTree = "<group>"; };
-		0A17929029CDCC9F00CCBD12 /* IPTCheckoutCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IPTCheckoutCore.xcframework; path = ../IPTCheckoutCore.xcframework; sourceTree = "<group>"; };
 		0A3B863F29DD844A00C85FA8 /* IPTSampleUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPTSampleUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3B864129DD844A00C85FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A3B864329DD844A00C85FA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,8 +53,8 @@
 		0A3B864A29DD844B00C85FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A3B864D29DD844B00C85FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A3B864F29DD844B00C85FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A3B866229DD937400C85FA8 /* IPTCheckoutSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IPTCheckoutSDK.xcframework; sourceTree = "<group>"; };
-		0A3B866329DD937400C85FA8 /* IPTCheckoutCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IPTCheckoutCore.xcframework; sourceTree = "<group>"; };
+		0A84AFC529DDBA0500C1F384 /* IPTCheckoutCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IPTCheckoutCore.xcframework; path = ../Sources/IPTCheckoutCore.xcframework; sourceTree = "<group>"; };
+		0A84AFC629DDBA0600C1F384 /* IPTCheckoutSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IPTCheckoutSDK.xcframework; path = ../Sources/IPTCheckoutSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A3B866629DD937500C85FA8 /* IPTCheckoutCore.xcframework in Frameworks */,
-				0A3B866429DD937500C85FA8 /* IPTCheckoutSDK.xcframework in Frameworks */,
+				0A84AFC929DDBA0600C1F384 /* IPTCheckoutSDK.xcframework in Frameworks */,
+				0A84AFC729DDBA0600C1F384 /* IPTCheckoutCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,10 +119,8 @@
 		0A17928E29CDCC9F00CCBD12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A3B866329DD937400C85FA8 /* IPTCheckoutCore.xcframework */,
-				0A3B866229DD937400C85FA8 /* IPTCheckoutSDK.xcframework */,
-				0A17929029CDCC9F00CCBD12 /* IPTCheckoutCore.xcframework */,
-				0A17928F29CDCC9F00CCBD12 /* IPTCheckoutSDK.xcframework */,
+				0A84AFC529DDBA0500C1F384 /* IPTCheckoutCore.xcframework */,
+				0A84AFC629DDBA0600C1F384 /* IPTCheckoutSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,7 +149,7 @@
 				0A17927929CDCB7B00CCBD12 /* Sources */,
 				0A17927A29CDCB7B00CCBD12 /* Frameworks */,
 				0A17927B29CDCB7B00CCBD12 /* Resources */,
-				0A3B866829DD937500C85FA8 /* Embed Frameworks */,
+				0A84AFCB29DDBA0600C1F384 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
