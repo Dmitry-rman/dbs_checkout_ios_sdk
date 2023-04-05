@@ -8,9 +8,13 @@ let package = Package(
         .iOS(.v13),
     ],
     products: [
-        .library(name: "IPTCheckout",targets: ["IPTCheckoutSDK","IPTCheckoutCore"])
+        .library(name: "IPTCheckout",
+                 targets: ["IPTCheckoutSDK","IPTCheckoutCore"])
     ],
     targets: [
+        .target(name: "IPTCheckput",
+                path: "./Sources",
+                exclude: ["IPTCheckoutCore.xcframework.zip", "IPTCheckoutSDK.xcframework.zip"]),
         .binaryTarget(
             name: "IPTCheckoutCore",
             url: "https://46009.selcdn.ru/public/iptcheckout/IPTCheckoutCore.xcframework.zip",
