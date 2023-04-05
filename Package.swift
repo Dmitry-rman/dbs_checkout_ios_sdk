@@ -13,8 +13,9 @@ let package = Package(
     ],
     targets: [
         .target(name: "IPTCheckput",
-                path: "./Sources",
-                exclude: ["IPTCheckoutCore.xcframework.zip", "IPTCheckoutSDK.xcframework.zip"]),
+                path: "./",
+                exclude: ["IPTCheckoutCore.xcframework.zip", "IPTCheckoutSDK.xcframework.zip"],
+               sources: ["./"]),
         .binaryTarget(
             name: "IPTCheckoutCore",
             url: "https://46009.selcdn.ru/public/iptcheckout/IPTCheckoutCore.xcframework.zip",
