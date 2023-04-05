@@ -26,7 +26,7 @@ let package = Package(
             exclude: []),
         .binaryTarget(name: "IPTCheckoutCore",
                       path: "./Sources/IPTCheckoutCore.xcframework"),
-        .binaryTarget(name: "IPTCheckoutCore",
+        .binaryTarget(name: "IPTCheckoutSDK",
                       path: "./Sources/IPTCheckoutSDK.xcframework"),
 //        .binaryTarget(
 //            name: "IPTCheckoutCore",
