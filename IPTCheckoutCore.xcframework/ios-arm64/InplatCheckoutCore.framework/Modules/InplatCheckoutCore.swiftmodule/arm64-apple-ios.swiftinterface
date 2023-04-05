@@ -1,0 +1,225 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InplatCheckoutCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import CommonCrypto
+import Foundation
+@_exported import InplatCheckoutCore
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+@_hasMissingDesignatedInitializers final public class InplatCheckoutCoreSdk {
+  final public var configuration: InplatCheckoutCore.InplatCheckoutCoreSdkConfiguration!
+  public static var buildMode: Swift.String {
+    get
+  }
+  final public func initPayment() -> Combine.AnyPublisher<InplatCheckoutCore.PaymentInitResponse, Swift.Error>
+  final public func getCardInfo(for pan: Swift.String) -> Combine.AnyPublisher<InplatCheckoutCore.CardInfo, Swift.Error>
+  final public func beginPayment(with instrument: InplatCheckoutCore.PaymentInstrument) -> Combine.AnyPublisher<InplatCheckoutCore.PaymentBeginResult, Swift.Error>
+  final public func obtainPaymentStatus() -> Combine.AnyPublisher<InplatCheckoutCore.PaymentStatusResult, Swift.Error>
+  @objc deinit
+}
+public enum PaymentBeginResult {
+  case success
+  case tds(webViewRequest: Foundation.URLRequest, tdsFinalRedirectUrl: Foundation.URL)
+}
+public enum Currency : Swift.Int, Swift.Decodable {
+  case unknown
+  case rub
+  case uz
+  case usd
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+#warning("Убрать public с моков, когда перейдем на работу с ядром (моки будут зашиты в нем)")
+extension Swift.Result : Swift.Decodable where Success : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CardInfo {
+  public let bankName: Swift.String?
+  public var cardType: InplatCheckoutCore.CardType {
+    get
+  }
+  public var isCVCRequired: Swift.Bool {
+    get
+  }
+}
+extension InplatCheckoutCore.CardInfo : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+  public static var unknown: InplatCheckoutCore.CardInfo {
+    get
+  }
+}
+public enum InplatCheckoutCoreSdkLanguage : Swift.String {
+  case ru
+  case en
+  case uz
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum InplatCheckoutCoreSdkEnvironment {
+  case merch
+  case debug
+  case prod
+  public static func == (a: InplatCheckoutCore.InplatCheckoutCoreSdkEnvironment, b: InplatCheckoutCore.InplatCheckoutCoreSdkEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct InplatCheckoutCoreSdkConfiguration {
+  public let paymentId: Swift.String
+  public let environment: InplatCheckoutCore.InplatCheckoutCoreSdkEnvironment
+  public let language: InplatCheckoutCore.InplatCheckoutCoreSdkLanguage
+  public init(paymentId: Swift.String, environment: InplatCheckoutCore.InplatCheckoutCoreSdkEnvironment, language: InplatCheckoutCore.InplatCheckoutCoreSdkLanguage = .ru)
+}
+public struct Order {
+  public var currency: InplatCheckoutCore.Currency {
+    get
+  }
+  public let amount: Swift.Int
+  public var amountInCurrency: Swift.Float {
+    get
+  }
+  public let merchantName: Swift.String?
+  public let orderNumber: Swift.String?
+  public let paymentDetails: Swift.String?
+}
+extension InplatCheckoutCore.Order : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CardBinding : Swift.Identifiable {
+  public let id: Swift.String
+  public var expiryDate: Foundation.Date {
+    get
+  }
+  public let maskedPan: Swift.String
+  public var cardType: InplatCheckoutCore.CardType {
+    get
+  }
+  public var isCVCRequired: Swift.Bool {
+    get
+  }
+  public typealias ID = Swift.String
+}
+extension InplatCheckoutCore.CardBinding : Swift.Hashable {
+  public static func == (lhs: InplatCheckoutCore.CardBinding, rhs: InplatCheckoutCore.CardBinding) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension InplatCheckoutCore.CardBinding : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension InplatCheckoutCore.InplatCheckoutCoreSdk {
+  convenience public init(configuration: InplatCheckoutCore.InplatCheckoutCoreSdkConfiguration)
+}
+public enum SDKError : Swift.Int, Swift.Error {
+  case unknownError
+  case accessTokenObtainError
+  case unknownPayment
+  case unknownCardBinding
+  case newCardInfoError
+  case notEnoughMoney
+  case securityError
+  case newCardRestricted
+  case bankDeniedPayment
+  case operationsLimitReached
+  case paymentAmountExceededLimits
+  case cardTypeNotSupported
+  case newCardPanError
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct PaymentInitResponse {
+  public let order: InplatCheckoutCore.Order
+  public var bindings: [InplatCheckoutCore.CardBinding] {
+    get
+  }
+}
+extension InplatCheckoutCore.PaymentInitResponse : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum PaymentInstrument {
+  case newCard(pan: Swift.String, expiryDate: Foundation.Date, cvc: Swift.String?, needBindCard: Swift.Bool)
+  case cardBinding(bindingId: Swift.String, cvc: Swift.String?)
+}
+extension SwiftUI.Color {
+  public init(hex: Swift.Int, decodingOpacity: Swift.Bool = false)
+  public init?(string: Swift.String)
+}
+extension UIKit.UIColor {
+  convenience public init(hex: Swift.Int, decodingOpacity: Swift.Bool = false)
+  convenience public init?(string: Swift.String)
+}
+public enum CardType : Swift.String, Swift.Decodable {
+  case unknown
+  case mastercard
+  case visa
+  case uzcard
+  case humo
+  case mir
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Foundation.NumberFormatter {
+  public static let changeFormatter: Foundation.NumberFormatter
+  public static let currencyFormatter: Foundation.NumberFormatter
+}
+public protocol CustomNumberFormatterProtocol {
+}
+extension InplatCheckoutCore.CustomNumberFormatterProtocol {
+  public var changeString: Swift.String? {
+    get
+  }
+  public func currencyString(currency: Swift.String) -> Swift.String?
+}
+extension Swift.Int : InplatCheckoutCore.CustomNumberFormatterProtocol {
+}
+extension Swift.Double : InplatCheckoutCore.CustomNumberFormatterProtocol {
+}
+extension Swift.Float : InplatCheckoutCore.CustomNumberFormatterProtocol {
+}
+public enum PaymentStatusResult {
+  case success
+  case failure(InplatCheckoutCore.SDKError)
+}
+extension Foundation.Date {
+  public static func fromString(_ string: Swift.String, withFormat format: Swift.String) -> Foundation.Date?
+}
+extension Combine.Publisher {
+  public func sinkIgnoringCompletion(receiveFailure: @escaping ((Self.Failure) -> Swift.Void), receiveValue: @escaping ((Self.Output) -> Swift.Void)) -> Combine.AnyCancellable
+  public func sinkResult(_ receiveResult: @escaping ((Swift.Result<Self.Output, Self.Failure>) -> Swift.Void)) -> Combine.AnyCancellable
+  public func retry<T>(_ retries: Swift.Int, delay: T.SchedulerTimeType.Stride, scheduler: T = RunLoop.current) -> Combine.AnyPublisher<Self.Output, Self.Failure> where T : Combine.Scheduler
+  public func sinkIgnoringAll() -> Combine.AnyCancellable
+  public func sinkStore(in set: inout Swift.Set<Combine.AnyCancellable>)
+}
+extension InplatCheckoutCore.Currency : Swift.Equatable {}
+extension InplatCheckoutCore.Currency : Swift.Hashable {}
+extension InplatCheckoutCore.Currency : Swift.RawRepresentable {}
+extension InplatCheckoutCore.InplatCheckoutCoreSdkLanguage : Swift.Equatable {}
+extension InplatCheckoutCore.InplatCheckoutCoreSdkLanguage : Swift.Hashable {}
+extension InplatCheckoutCore.InplatCheckoutCoreSdkLanguage : Swift.RawRepresentable {}
+extension InplatCheckoutCore.InplatCheckoutCoreSdkEnvironment : Swift.Equatable {}
+extension InplatCheckoutCore.InplatCheckoutCoreSdkEnvironment : Swift.Hashable {}
+extension InplatCheckoutCore.SDKError : Swift.Equatable {}
+extension InplatCheckoutCore.SDKError : Swift.Hashable {}
+extension InplatCheckoutCore.SDKError : Swift.RawRepresentable {}
+extension InplatCheckoutCore.CardType : Swift.Equatable {}
+extension InplatCheckoutCore.CardType : Swift.Hashable {}
+extension InplatCheckoutCore.CardType : Swift.RawRepresentable {}
