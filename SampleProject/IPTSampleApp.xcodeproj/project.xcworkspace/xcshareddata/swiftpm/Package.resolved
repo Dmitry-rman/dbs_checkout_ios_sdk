@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Dmitry-rman/inplat_checkout_ios_sdk/",
       "state" : {
-        "branch" : "main",
-        "revision" : "9ed424ab8ff6bdf9d115805dcc5811e4fddbd12d"
+        "revision" : "541bd94cbdd529b16cce3dbf77bd3fe1c5d3a7a2",
+        "version" : "0.1.0"
       }
     }
   ],
