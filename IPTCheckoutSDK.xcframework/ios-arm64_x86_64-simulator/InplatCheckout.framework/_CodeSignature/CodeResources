@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		vnJAVXSnachXbOfMUU4yRzppnQo=
+		qwO7KxppvJRBHklsQViWAmFOPmo=
 		</data>
 		<key>Frameworks/InplatCheckoutCore.framework/Info.plist</key>
 		<data>
-		2Mzok57fEitOjnnkU18uwosNubs=
+		ERB9T8VjjYNW6zDvZ7onmF67ToQ=
 		</data>
 		<key>Frameworks/InplatCheckoutCore.framework/InplatCheckoutCore</key>
 		<data>
-		7od5+v3/thTsJBzs8kvtWhzSakU=
+		AmyaWGuDb3u8KzbS7G6soHcKgzM=
 		</data>
 		<key>Frameworks/InplatCheckoutCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		jaKfgqj6+AVPzYdGBXcQjpzSVrI=
+		PTVR2xZ1rwBATf3bowmX/13YfrY=
 		</data>
 		<key>Headers/Checkout.h</key>
 		<data>
@@ -30,23 +30,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SqvxAbFkvJxveQXU4FffXwKTLFg=
+		AUHKg7dGnWccBktT1pCfmMOYvbw=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		qF0l5UHPPErMgaJbeD2uIJFcpNU=
+		sPEgsElStUoX0l5DXk3G1LfBGqE=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		kuB52JIxjN7g9U4g/Q1w07gOsJc=
+		PDjjBtQm2LRTmSsbsimOzFjWa4g=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		dJUiLsvDywoWA/V2wNrGWsMiOzo=
+		R1F+e3GlxKBskXJI1rn8KamTIK0=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iyqbxuozWtVP4herWTe3sDSpQqU=
+		pCPXKsJZBXIbeul6hJBr8YGYtc4=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,19 +54,19 @@
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iyqbxuozWtVP4herWTe3sDSpQqU=
+		pCPXKsJZBXIbeul6hJBr8YGYtc4=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uMLmHFZ1kR3nO+EuVPGU/NDRKw8=
+		SkJvwSLrwdcwtCbRIWhias282gs=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		dJUiLsvDywoWA/V2wNrGWsMiOzo=
+		R1F+e3GlxKBskXJI1rn8KamTIK0=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XUIi0NppfxGFNf2FzYCVGmB7mKM=
+		T4BVs1ZJ2yLKLui1WsFjb3ijSYw=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XUIi0NppfxGFNf2FzYCVGmB7mKM=
+		T4BVs1ZJ2yLKLui1WsFjb3ijSYw=
 		</data>
 		<key>Modules/InplatCheckout.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Di8vAzpFXIvFKvW33D4e/z+Nqes=
+		2vj0a/twwFQzktsYF7cAM4yshpE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -130,28 +130,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AbljoILliOlVGbPIrg+4ZrnR+2X8zcp/Of8tHdRnfqk=
+			G0sc2HIYbglv6l8eYqSdmDA5U9LFRu2nFrmueY2b9Bg=
 			</data>
 		</dict>
 		<key>Frameworks/InplatCheckoutCore.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U7iOUWgpYX6en0srbEobaI/UcmYKJnijblafxOU20uo=
+			rpn99xZ0BCMPaXdeblIEn5dA5/g3CjvM/Sxy9xdizuY=
 			</data>
 		</dict>
 		<key>Frameworks/InplatCheckoutCore.framework/InplatCheckoutCore</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vxoC9juVYMYGLBZDA+DlyaEWd7FB2XrYlEfqc/mC0eo=
+			WY8hyvl6cMsu7UZlzCz3AKSqk/aWUr24IhlWxscIZ6s=
 			</data>
 		</dict>
 		<key>Frameworks/InplatCheckoutCore.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+zglRJD4qQLAlGt8buozr+bJSaMXn049wQ/4sbpn+a0=
+			4o+tlCUkq4EbzEi2xnbG4Fei+32OEgt7buQHf30C+Ys=
 			</data>
 		</dict>
 		<key>Headers/Checkout.h</key>
@@ -172,28 +172,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xS9yrRa1kymYpP81rZT4SaXRop1mBIyoiYIbKfWDvEY=
+			FHDb2dCtvd7pZCVN5ZGxFSR7DXbC2XHWC4Tz1v+JG4o=
 			</data>
 		</dict>
 		<key>Modules/InplatCheckout.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KI/Xq05MXfRy9Iux7avcEg/hs1alweEtkpxQEWuFJZM=
+			330opCCIMVNXi/quQPAtSAplsTBLdgev3Hp/esWH1Og=
 			</data>
 		</dict>
 		<key>Modules/InplatCheckout.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TitxWBKlqpRx/MlwvabXx7t6HoLS2a9MA2kJwNPH4eU=
+			VwG+ZyvBvLid8HvPUra9G+Nwp0tumZOCeJ+cMbh2R/Q=
 			</data>
 		</dict>
 		<key>Modules/InplatCheckout.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JiCaHPQrcWBb0x25r9KQeBbURyOLnv5mrivdd/QIkCQ=
+			tjTM8J5ASxC2Cba/8Ti/I4uyI8CRHi8scCa6YncYuOU=
 			</data>
 		</dict>
 		<key>Modules/InplatCheckout.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -207,28 +207,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JiCaHPQrcWBb0x25r9KQeBbURyOLnv5mrivdd/QIkCQ=
+			tjTM8J5ASxC2Cba/8Ti/I4uyI8CRHi8scCa6YncYuOU=
 			</data>
 		</dict>
 		<key>Modules/InplatCheckout.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			suVOUyZwkAtPPGhYtRCDfF+STmB3kZDwFnQjiCGuYqU=
+			Es3aMNMKpTq3BQYDK5YIGhAuljcFas6YRbvPe7BKUKY=
 			</data>
 		</dict>
 		<key>Modules/InplatCheckout.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TitxWBKlqpRx/MlwvabXx7t6HoLS2a9MA2kJwNPH4eU=
+			VwG+ZyvBvLid8HvPUra9G+Nwp0tumZOCeJ+cMbh2R/Q=
 			</data>
 		</dict>
 		<key>Modules/InplatCheckout.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5T6IccFsnte1KW5UHOwPRfq6CUgbXyzpy4mXsUvM9X0=
+			YZtKK0ZLD4FYNjLEMlAd+Il3/I8ko853mBHHwcEJBHs=
 			</data>
 		</dict>
 		<key>Modules/InplatCheckout.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -242,14 +242,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5T6IccFsnte1KW5UHOwPRfq6CUgbXyzpy4mXsUvM9X0=
+			YZtKK0ZLD4FYNjLEMlAd+Il3/I8ko853mBHHwcEJBHs=
 			</data>
 		</dict>
 		<key>Modules/InplatCheckout.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jgo74we/tzzLkTL6WI1WtrstT3OelSSHXJoYQCzkzmI=
+			EIc+7V9AspvJgNsmaoQdch9V9ZjBfMaKif5vZbREfVg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

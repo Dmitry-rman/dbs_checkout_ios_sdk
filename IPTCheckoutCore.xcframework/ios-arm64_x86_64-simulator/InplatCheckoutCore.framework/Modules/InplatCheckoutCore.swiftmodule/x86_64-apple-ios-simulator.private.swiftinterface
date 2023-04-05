@@ -12,6 +12,9 @@ import _Concurrency
 import _StringProcessing
 @_hasMissingDesignatedInitializers final public class InplatCheckoutCoreSdk {
   final public var configuration: InplatCheckoutCore.InplatCheckoutCoreSdkConfiguration!
+  final public var order: InplatCheckoutCore.Order? {
+    get
+  }
   public static var buildMode: Swift.String {
     get
   }
@@ -36,7 +39,6 @@ public enum Currency : Swift.Int, Swift.Decodable {
     get
   }
 }
-#warning("Убрать public с моков, когда перейдем на работу с ядром (моки будут зашиты в нем)")
 extension Swift.Result : Swift.Decodable where Success : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
 }

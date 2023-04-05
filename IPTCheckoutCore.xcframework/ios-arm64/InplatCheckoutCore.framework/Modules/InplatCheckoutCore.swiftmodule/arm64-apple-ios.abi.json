@@ -220,6 +220,72 @@
           },
           {
             "kind": "Var",
+            "name": "order",
+            "printedName": "order",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "InplatCheckoutCore.Order?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Order",
+                    "printedName": "InplatCheckoutCore.Order",
+                    "usr": "s:18InplatCheckoutCore5OrderV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18InplatCheckoutCore0abC3SdkC5orderAA5OrderVSgvp",
+            "mangledName": "$s18InplatCheckoutCore0abC3SdkC5orderAA5OrderVSgvp",
+            "moduleName": "InplatCheckoutCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "InplatCheckoutCore.Order?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Order",
+                        "printedName": "InplatCheckoutCore.Order",
+                        "usr": "s:18InplatCheckoutCore5OrderV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18InplatCheckoutCore0abC3SdkC5orderAA5OrderVSgvg",
+                "mangledName": "$s18InplatCheckoutCore0abC3SdkC5orderAA5OrderVSgvg",
+                "moduleName": "InplatCheckoutCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "buildMode",
             "printedName": "buildMode",
             "children": [
@@ -7414,7 +7480,7 @@
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Model\/Payment\/PaymentStatus.swift",
       "kind": "StringLiteral",
-      "offset": 603,
+      "offset": 790,
       "length": 10,
       "value": "\"DECLINED\""
     },
@@ -7435,7 +7501,7 @@
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Model\/Payment\/PaymentStatus.swift",
       "kind": "StringLiteral",
-      "offset": 603,
+      "offset": 790,
       "length": 10,
       "value": "\"DECLINED\""
     },
@@ -7974,287 +8040,287 @@
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3482,
+      "offset": 3783,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3620,
+      "offset": 3931,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3755,
+      "offset": 4066,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3881,
+      "offset": 4192,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3953,
+      "offset": 4264,
       "length": 4,
       "value": "3005"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4071,
+      "offset": 4382,
       "length": 4,
       "value": "3006"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4185,
+      "offset": 4496,
       "length": 4,
       "value": "3007"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4285,
+      "offset": 4596,
       "length": 4,
       "value": "3008"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4414,
+      "offset": 4725,
       "length": 4,
       "value": "3009"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4580,
+      "offset": 4891,
       "length": 4,
       "value": "3010"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4735,
+      "offset": 5046,
       "length": 4,
       "value": "3011"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4852,
+      "offset": 5163,
       "length": 4,
       "value": "3012"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4992,
+      "offset": 5303,
       "length": 4,
       "value": "3013"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5147,
+      "offset": 5458,
       "length": 4,
       "value": "3015"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5258,
+      "offset": 5569,
       "length": 4,
       "value": "3024"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3755,
+      "offset": 4066,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3881,
+      "offset": 4192,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3953,
+      "offset": 4264,
       "length": 4,
       "value": "3005"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4071,
+      "offset": 4382,
       "length": 4,
       "value": "3006"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4185,
+      "offset": 4496,
       "length": 4,
       "value": "3007"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4285,
+      "offset": 4596,
       "length": 4,
       "value": "3008"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4414,
+      "offset": 4725,
       "length": 4,
       "value": "3009"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4580,
+      "offset": 4891,
       "length": 4,
       "value": "3010"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4735,
+      "offset": 5046,
       "length": 4,
       "value": "3011"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4852,
+      "offset": 5163,
       "length": 4,
       "value": "3012"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4992,
+      "offset": 5303,
       "length": 4,
       "value": "3013"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5147,
+      "offset": 5458,
       "length": 4,
       "value": "3015"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5258,
+      "offset": 5569,
       "length": 4,
       "value": "3024"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3755,
+      "offset": 4066,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3881,
+      "offset": 4192,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3953,
+      "offset": 4264,
       "length": 4,
       "value": "3005"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4071,
+      "offset": 4382,
       "length": 4,
       "value": "3006"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4185,
+      "offset": 4496,
       "length": 4,
       "value": "3007"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4285,
+      "offset": 4596,
       "length": 4,
       "value": "3008"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4414,
+      "offset": 4725,
       "length": 4,
       "value": "3009"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4580,
+      "offset": 4891,
       "length": 4,
       "value": "3010"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4735,
+      "offset": 5046,
       "length": 4,
       "value": "3011"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4852,
+      "offset": 5163,
       "length": 4,
       "value": "3012"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4992,
+      "offset": 5303,
       "length": 4,
       "value": "3013"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5147,
+      "offset": 5458,
       "length": 4,
       "value": "3015"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Constants\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5258,
+      "offset": 5569,
       "length": 4,
       "value": "3024"
     },
@@ -8366,28 +8432,28 @@
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Model\/Payment\/PaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1187,
+      "offset": 869,
       "length": 8,
       "value": "\"acsUrl\""
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Model\/Payment\/PaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1245,
+      "offset": 927,
       "length": 9,
       "value": "\"termUrl\""
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Model\/Payment\/PaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1187,
+      "offset": 869,
       "length": 8,
       "value": "\"acsUrl\""
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Model\/Payment\/PaymentResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1245,
+      "offset": 927,
       "length": 9,
       "value": "\"termUrl\""
     },
@@ -8429,9 +8495,9 @@
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Network\/HTTP\/HTTPBody.swift",
       "kind": "Dictionary",
-      "offset": 914,
-      "length": 65,
-      "value": "[(\"Content-Type\", \"application\/json; charset=utf-8\")]"
+      "offset": 932,
+      "length": 113,
+      "value": "[(\"Content-Type\", \"application\/json\"), (\"accept\", \"application\/json\")]"
     },
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/Core\/InplatCheckoutCore\/Sources\/Network\/HTTP\/HTTPRequest.swift",

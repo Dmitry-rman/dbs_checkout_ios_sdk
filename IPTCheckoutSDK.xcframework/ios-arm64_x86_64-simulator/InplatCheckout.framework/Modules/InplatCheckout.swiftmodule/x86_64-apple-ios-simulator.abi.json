@@ -840,8 +840,8 @@
           },
           {
             "kind": "Function",
-            "name": "createView",
-            "printedName": "createView(dismissButtonType:presentationType:)",
+            "name": "createCheckoutView",
+            "printedName": "createCheckoutView(dismissButtonType:presentationType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -870,8 +870,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14InplatCheckout0aB3SdkC10createView17dismissButtonType012presentationH0QrAC07DismissgH0O_AC012PresentationH0OtF",
-            "mangledName": "$s14InplatCheckout0aB3SdkC10createView17dismissButtonType012presentationH0QrAC07DismissgH0O_AC012PresentationH0OtF",
+            "usr": "s:14InplatCheckout0aB3SdkC06createB4View17dismissButtonType012presentationH0QrAC07DismissgH0O_AC012PresentationH0OtF",
+            "mangledName": "$s14InplatCheckout0aB3SdkC06createB4View17dismissButtonType012presentationH0QrAC07DismissgH0O_AC012PresentationH0OtF",
             "moduleName": "InplatCheckout",
             "declAttributes": [
               "Final",
@@ -5058,7 +5058,7 @@
     {
       "filePath": "\/Users\/dmitry\/Documents\/work\/ios-checkout-sdk\/SDK\/Checkout\/Sources\/UI\/User stories\/Success\/View model\/SuccessViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 473,
+      "offset": 474,
       "length": 5,
       "value": "false"
     },

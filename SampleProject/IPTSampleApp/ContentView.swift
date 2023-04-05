@@ -15,7 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Button("Оплатить"){
+            Button("Оплатить из SwiftUI"){
                 isSDKPresented = true
             }
         }
@@ -41,8 +41,8 @@ struct ContentView: View {
         let sdk = InplatCheckoutSdk(configuration: configuration)
         
         ///Создать SwiftUI View с флоу оплаты
-        return sdk.createView(dismissButtonType:  InplatCheckoutSdk.DismissButtonType.close,
-                              presentationType:  InplatCheckoutSdk.PresentationType.sheet)
+        return sdk.createCheckoutView(dismissButtonType:  InplatCheckoutSdk.DismissButtonType.close,
+                                      presentationType:  InplatCheckoutSdk.PresentationType.sheet)
     }
 }
 

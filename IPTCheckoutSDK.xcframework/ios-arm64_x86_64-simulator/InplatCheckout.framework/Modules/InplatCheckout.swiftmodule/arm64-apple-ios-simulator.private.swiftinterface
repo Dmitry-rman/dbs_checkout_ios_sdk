@@ -51,7 +51,7 @@ public struct SDKFontStyles {
 extension Swift.String : Swift.Error {
 }
 extension InplatCheckout.InplatCheckoutSdk {
-  final public func createView(dismissButtonType: InplatCheckout.InplatCheckoutSdk.DismissButtonType, presentationType: InplatCheckout.InplatCheckoutSdk.PresentationType) -> some SwiftUI.View
+  final public func createCheckoutView(dismissButtonType: InplatCheckout.InplatCheckoutSdk.DismissButtonType, presentationType: InplatCheckout.InplatCheckoutSdk.PresentationType) -> some SwiftUI.View
   
 }
 extension InplatCheckout.InplatCheckoutSdk.PresentationType : Swift.Equatable {}
