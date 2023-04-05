@@ -25,16 +25,13 @@ let package = Package(
             name: "IPTCheckout"),
         .binaryTarget(
             name: "IPTCheckoutCore",
-            url: "https://url/to/some/remote/IPTCheckoutCore.xcframework.zip",
+            url: "https://46009.selcdn.ru/public/iptcheckout/IPTCheckoutCore.xcframework.zip",
             checksum: "0635556eb2b6fa81bbd05429b1f9f9c24d4c731d27b91f8f61df41f84bd1ae69"
         ),
         .binaryTarget(
             name: "IPTCheckoutSDK",
-            url: "https://url/to/some/remote/IPTCheckoutSDK.xcframework.zip",
+            url: "https://46009.selcdn.ru/public/iptcheckout/IPTCheckoutSDK.xcframework.zip",
             checksum: "a86629de04b34220b1bccc13c95171f0616cbee10ef2f03f89cd18480f631133"
         ),
-        .testTarget(
-            name: "IPTCheckoutTests",
-            dependencies: ["IPTCheckout"]),
     ]
 )
