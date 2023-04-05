@@ -8,7 +8,7 @@ let package = Package(
         .iOS(.v13),
     ],
     products: [
-        .library(name: "IPTCheckout",targets: ["IPTCheckout"]),
+        .library(name: "IPTCheckout",targets: ["IPTCheckoutCore", "IPTCheckoutSDK"]),
     ],
     dependencies: [],
     targets: [
