@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A048CE029DD9524004223B7 /* IPTCheckout in Frameworks */ = {isa = PBXBuildFile; productRef = 0A048CDF29DD9524004223B7 /* IPTCheckout */; };
 		0A17928129CDCB7B00CCBD12 /* IPTSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17928029CDCB7B00CCBD12 /* IPTSampleApp.swift */; };
 		0A17928329CDCB7B00CCBD12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17928229CDCB7B00CCBD12 /* ContentView.swift */; };
 		0A17928529CDCB7D00CCBD12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A17928429CDCB7D00CCBD12 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A048CE029DD9524004223B7 /* IPTCheckout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +177,9 @@
 			dependencies = (
 			);
 			name = IPTSampleUIKit;
+			packageProductDependencies = (
+				0A048CDF29DD9524004223B7 /* IPTCheckout */,
+			);
 			productName = IPTSampleUIKit;
 			productReference = 0A3B863F29DD844A00C85FA8 /* IPTSampleUIKit.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +211,9 @@
 				Base,
 			);
 			mainGroup = 0A17927429CDCB7B00CCBD12;
+			packageReferences = (
+				0A048CDE29DD9524004223B7 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */,
+			);
 			productRefGroup = 0A17927E29CDCB7B00CCBD12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -539,6 +547,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A048CDE29DD9524004223B7 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dmitry-rman/inplat_checkout_ios_sdk/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A048CDF29DD9524004223B7 /* IPTCheckout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A048CDE29DD9524004223B7 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */;
+			productName = IPTCheckout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A17927529CDCB7B00CCBD12 /* Project object */;
 }
