@@ -12,16 +12,16 @@
 		0A17928329CDCB7B00CCBD12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17928229CDCB7B00CCBD12 /* ContentView.swift */; };
 		0A17928529CDCB7D00CCBD12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A17928429CDCB7D00CCBD12 /* Assets.xcassets */; };
 		0A17928829CDCB7D00CCBD12 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A17928729CDCB7D00CCBD12 /* Preview Assets.xcassets */; };
+		0A20378529DDC4A9000E1569 /* IPTCheckoutCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A20378329DDC4A9000E1569 /* IPTCheckoutCore.xcframework */; };
+		0A20378629DDC4A9000E1569 /* IPTCheckoutCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A20378329DDC4A9000E1569 /* IPTCheckoutCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A20378729DDC4A9000E1569 /* IPTCheckoutSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A20378429DDC4A9000E1569 /* IPTCheckoutSDK.xcframework */; };
+		0A20378829DDC4A9000E1569 /* IPTCheckoutSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A20378429DDC4A9000E1569 /* IPTCheckoutSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A3B864229DD844A00C85FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3B864129DD844A00C85FA8 /* AppDelegate.swift */; };
 		0A3B864429DD844A00C85FA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3B864329DD844A00C85FA8 /* SceneDelegate.swift */; };
 		0A3B864629DD844A00C85FA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3B864529DD844A00C85FA8 /* ViewController.swift */; };
 		0A3B864929DD844A00C85FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B864729DD844A00C85FA8 /* Main.storyboard */; };
 		0A3B864B29DD844B00C85FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B864A29DD844B00C85FA8 /* Assets.xcassets */; };
 		0A3B864E29DD844B00C85FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B864C29DD844B00C85FA8 /* LaunchScreen.storyboard */; };
-		0A84AFC729DDBA0600C1F384 /* IPTCheckoutCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84AFC529DDBA0500C1F384 /* IPTCheckoutCore.xcframework */; };
-		0A84AFC829DDBA0600C1F384 /* IPTCheckoutCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84AFC529DDBA0500C1F384 /* IPTCheckoutCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0A84AFC929DDBA0600C1F384 /* IPTCheckoutSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84AFC629DDBA0600C1F384 /* IPTCheckoutSDK.xcframework */; };
-		0A84AFCA29DDBA0600C1F384 /* IPTCheckoutSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A84AFC629DDBA0600C1F384 /* IPTCheckoutSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,8 +31,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0A84AFCA29DDBA0600C1F384 /* IPTCheckoutSDK.xcframework in Embed Frameworks */,
-				0A84AFC829DDBA0600C1F384 /* IPTCheckoutCore.xcframework in Embed Frameworks */,
+				0A20378829DDC4A9000E1569 /* IPTCheckoutSDK.xcframework in Embed Frameworks */,
+				0A20378629DDC4A9000E1569 /* IPTCheckoutCore.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,6 +45,8 @@
 		0A17928229CDCB7B00CCBD12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A17928429CDCB7D00CCBD12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A17928729CDCB7D00CCBD12 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A20378329DDC4A9000E1569 /* IPTCheckoutCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IPTCheckoutCore.xcframework; sourceTree = "<group>"; };
+		0A20378429DDC4A9000E1569 /* IPTCheckoutSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IPTCheckoutSDK.xcframework; sourceTree = "<group>"; };
 		0A3B863F29DD844A00C85FA8 /* IPTSampleUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPTSampleUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A3B864129DD844A00C85FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A3B864329DD844A00C85FA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,8 +55,6 @@
 		0A3B864A29DD844B00C85FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A3B864D29DD844B00C85FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A3B864F29DD844B00C85FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A84AFC529DDBA0500C1F384 /* IPTCheckoutCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IPTCheckoutCore.xcframework; path = ../Sources/IPTCheckoutCore.xcframework; sourceTree = "<group>"; };
-		0A84AFC629DDBA0600C1F384 /* IPTCheckoutSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = IPTCheckoutSDK.xcframework; path = ../Sources/IPTCheckoutSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A84AFC929DDBA0600C1F384 /* IPTCheckoutSDK.xcframework in Frameworks */,
-				0A84AFC729DDBA0600C1F384 /* IPTCheckoutCore.xcframework in Frameworks */,
+				0A20378729DDC4A9000E1569 /* IPTCheckoutSDK.xcframework in Frameworks */,
+				0A20378529DDC4A9000E1569 /* IPTCheckoutCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +119,8 @@
 		0A17928E29CDCC9F00CCBD12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A84AFC529DDBA0500C1F384 /* IPTCheckoutCore.xcframework */,
-				0A84AFC629DDBA0600C1F384 /* IPTCheckoutSDK.xcframework */,
+				0A20378329DDC4A9000E1569 /* IPTCheckoutCore.xcframework */,
+				0A20378429DDC4A9000E1569 /* IPTCheckoutSDK.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
