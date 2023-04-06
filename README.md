@@ -1,6 +1,6 @@
-# Inplat Checkout SDK for iOS
+# DBS Checkout SDK for iOS
 
-SDK состоит из библиотеки ядра (**IPTCheckoutCore**) и библиотеки UI форм (**IPTCheckoutSDK**) в виде раздельных xcframeworks.
+SDK состоит из библиотеки ядра (**DBSCheckoutCore**) и библиотеки UI форм (**DBSCheckoutSDK**) в виде раздельных xcframeworks.
 
 ## Возможности SDK
 
@@ -17,12 +17,12 @@ SDK состоит из библиотеки ядра (**IPTCheckoutCore**) и �
 
 ## Требования и ограничения
 
-Для работы **Inplat Checkout SDK** необходима iOS версии 13.0 или выше.
-Библиотека UI форм **IPTCheckoutSDK** может быть использована только с ядром **IPTCheckoutCore**.
+Для работы **DBS Checkout SDK** необходима iOS версии 13.0 или выше.
+Библиотека UI форм **DBSCheckoutSDK** может быть использована только с ядром **DBSCheckoutCore**.
 
 ## Подключение
 ### Через XCode и xcframeworks
-В настоящий момент SDK подключается с помощью непосредственного добавления IPTCheckoutCore.xcframework и IPTCheckoutSDK.xcframework в проект.
+В настоящий момент SDK подключается с помощью непосредственного добавления DBSCheckoutCore.xcframework и DBSCheckoutSDK.xcframework в проект.
 Это можно сделать, добавив ссылки на библиотеку в секцию **Frameworks, Libraries and Embedded Content**:
 
 ![img-xcode-xcframeworks]
@@ -30,7 +30,7 @@ SDK состоит из библиотеки ядра (**IPTCheckoutCore**) и �
 ## Подготовка к работе
 
 Вначале вам понадобится получить от платжного сервиса идентификатор платежа (**paymentId**).
-Подбробнее об этом можно узнать в документации к [InplatTech Checkout][inplattech-checkout-help], в личном кабинете или через почту checkout@inplattech.ru.
+Подбробнее об этом можно узнать в документации к [DBS Checkout][inplattech-checkout-help], в личном кабинете или через почту checkout@inplattech.ru.
 
 Для возможности работы с тестовым сервером **kube.inplatdev.ru** необходимо добавить в Info.plist свойство
 "App Transport Security Settings" со следующими значениями:
@@ -59,7 +59,7 @@ SDK состоит из библиотеки ядра (**IPTCheckoutCore**) и �
 
 ## Начало работы
 
-Для начала работы нужно создать конфигурацию **InplatCheckoutCoreSdkConfiguration**, используя следующие обязательные параметры:
+Для начала работы нужно создать конфигурацию **DBSCheckoutCoreSdkConfiguration**, используя следующие обязательные параметры:
 - **paymentId**: Id платежа, полученного ранее от платежного сервиса.
 - **environment**: режим работы SDK. Варианты **debug**(дев стенд), **merch**(бета-режим) и **prod**(релизный режим).
 
@@ -80,19 +80,19 @@ SDK состоит из библиотеки ядра (**IPTCheckoutCore**) и �
 
 ```swift
         ///language по-умолчанию русский язык
-        let language = InplatCheckoutCoreSdkLanguage.ru
+        let language = DBSCheckoutCoreSdkLanguage.ru
         
         ///ID платежа, подлежащего оплате
         let paymentID = "payment_id"
         
         ///Среда, используемая в SDK
-        let environment = InplatCheckoutCoreSdkEnvironment.merch
+        let environment = DBSCheckoutCoreSdkEnvironment.merch
 
         ///Создать конфигурацию и экземпляр SDK
-        let configuration = InplatCheckoutCoreSdkConfiguration(paymentId: paymentID,
+        let configuration = DBSCheckoutCoreSdkConfiguration(paymentId: paymentID,
                                                              environment: environment,
                                                                 language: language)
-        let sdk = InplatCheckoutSdk(configuration: configuration)
+        let sdk = DBSCheckoutSdk(configuration: configuration)
         
         ///Показать флоу оплаты, где self - это экземпляр UIViewController
         sdk.presentCheckoutView(on: self,
@@ -124,23 +124,23 @@ struct ContentView: View {
     private var paymentView: some View{
         
         ///language по-умолчанию русский язык
-        let language = InplatCheckoutCoreSdkLanguage.ru
+        let language = DBSCheckoutCoreSdkLanguage.ru
         
         ///ID платежа, подлежащего оплате
         let paymentID = "payment_id"
         
         ///Среда, используемая в SDK
-        let environment = InplatCheckoutCoreSdkEnvironment.merch
+        let environment = DBSCheckoutCoreSdkEnvironment.merch
         
         ///Создать конфигурацию и экземпляр SDK
-        let configuration = InplatCheckoutCoreSdkConfiguration(paymentId: paymentID,
+        let configuration = DBSCheckoutCoreSdkConfiguration(paymentId: paymentID,
                                                              environment: environment,
                                                                 language: language)
-        let sdk = InplatCheckoutSdk(configuration: configuration)
+        let sdk = DBSCheckoutSdk(configuration: configuration)
         
         ///Создать и вернуть SwiftUI View с флоу оплаты SDK
-        return sdk.createCheckoutView(dismissButtonType:  InplatCheckoutSdk.DismissButtonType.close,
-                                       presentationType:  InplatCheckoutSdk.PresentationType.sheet)
+        return sdk.createCheckoutView(dismissButtonType:  DBSCheckoutSdk.DismissButtonType.close,
+                                       presentationType:  DBSCheckoutSdk.PresentationType.sheet)
     }
 }
 ```
@@ -149,5 +149,5 @@ struct ContentView: View {
 
 По всем возникающим вопросам, доработкам и предложениям обращаться на почту checkout@inplattech.ru
 
-[img-xcode-xcframeworks]: https://46009.selcdn.ru/public/iptcheckout/Docs/images/xcode_xcframeworks.png
+[img-xcode-xcframeworks]: https://github.com/Dmitry-rman/dbs_checkout_ios_sdk/blob/main/Docs/images/xcode_xcframeworks.png
 [inplattech-checkout-help]: https://inplat-tech.ru/docs/merchantapi/
