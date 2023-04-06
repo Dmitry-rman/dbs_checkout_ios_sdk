@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A048CE029DD9524004223B7 /* IPTCheckout in Frameworks */ = {isa = PBXBuildFile; productRef = 0A048CDF29DD9524004223B7 /* IPTCheckout */; };
 		0A17928129CDCB7B00CCBD12 /* IPTSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17928029CDCB7B00CCBD12 /* IPTSampleApp.swift */; };
 		0A17928329CDCB7B00CCBD12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17928229CDCB7B00CCBD12 /* ContentView.swift */; };
 		0A17928529CDCB7D00CCBD12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A17928429CDCB7D00CCBD12 /* Assets.xcassets */; };
@@ -22,6 +21,7 @@
 		0A423E6029DEAD3100BABEF4 /* IPTCheckoutCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A20378329DDC4A9000E1569 /* IPTCheckoutCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0A423E6229DEAD3200BABEF4 /* IPTCheckoutSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A20378429DDC4A9000E1569 /* IPTCheckoutSDK.xcframework */; };
 		0A423E6329DEAD3200BABEF4 /* IPTCheckoutSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0A20378429DDC4A9000E1569 /* IPTCheckoutSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0A423E6629DEB16800BABEF4 /* IPTCheckout in Frameworks */ = {isa = PBXBuildFile; productRef = 0A423E6529DEB16800BABEF4 /* IPTCheckout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A048CE029DD9524004223B7 /* IPTCheckout in Frameworks */,
+				0A423E6629DEB16800BABEF4 /* IPTCheckout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +176,7 @@
 			);
 			name = "IPTSampleUIKit+SPM";
 			packageProductDependencies = (
-				0A048CDF29DD9524004223B7 /* IPTCheckout */,
+				0A423E6529DEB16800BABEF4 /* IPTCheckout */,
 			);
 			productName = IPTSampleUIKit;
 			productReference = 0A3B863F29DD844A00C85FA8 /* IPTSampleUIKit+SPM.app */;
@@ -210,7 +210,7 @@
 			);
 			mainGroup = 0A17927429CDCB7B00CCBD12;
 			packageReferences = (
-				0A048CDE29DD9524004223B7 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */,
+				0A423E6429DEB16800BABEF4 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */,
 			);
 			productRefGroup = 0A17927E29CDCB7B00CCBD12 /* Products */;
 			projectDirPath = "";
@@ -547,20 +547,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0A048CDE29DD9524004223B7 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */ = {
+		0A423E6429DEB16800BABEF4 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Dmitry-rman/inplat_checkout_ios_sdk/";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A048CDF29DD9524004223B7 /* IPTCheckout */ = {
+		0A423E6529DEB16800BABEF4 /* IPTCheckout */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A048CDE29DD9524004223B7 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */;
+			package = 0A423E6429DEB16800BABEF4 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */;
 			productName = IPTCheckout;
 		};
 /* End XCSwiftPackageProductDependency section */
