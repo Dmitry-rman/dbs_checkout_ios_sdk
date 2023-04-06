@@ -1,21 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "acquiringsdk_ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/tinkoff-mobile-tech/AcquiringSdk_IOS",
-      "state" : {
-        "revision" : "0a7bb27febf32c963a3442c72bfc3b519ae4156b",
-        "version" : "2.18.2"
-      }
-    },
-    {
       "identity" : "inplat_checkout_ios_sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Dmitry-rman/inplat_checkout_ios_sdk/",
       "state" : {
-        "revision" : "bb377532e59940cc4a35848f1fbc5ad95d96189d",
-        "version" : "0.2.4"
+        "revision" : "aeca1ed40fa0504ac841a96486807d63718d06a3",
+        "version" : "0.2.5"
       }
     }
   ],
