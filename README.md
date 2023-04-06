@@ -149,5 +149,5 @@ struct ContentView: View {
 
 По всем возникающим вопросам, доработкам и предложениям обращаться на почту checkout@inplattech.ru
 
-[img-xcode-xcframeworks]: https://github.com/Dmitry-rman/dbs_checkout_ios_sdk/blob/main/Docs/images/xcode_xcframeworks.png
+[img-xcode-xcframeworks]: https://github.com/Dmitry-rman/dbs_checkout_ios_sdk/blob/main/images/xcode_xcframeworks.png?raw=true
 [inplattech-checkout-help]: https://inplat-tech.ru/docs/merchantapi/
