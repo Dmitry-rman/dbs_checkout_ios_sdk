@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import InplatCheckoutCore
-import InplatCheckout
+import DBSCheckoutCore
+import DBSCheckout
 
 class ViewController: UIViewController {
     
@@ -25,17 +25,17 @@ class ViewController: UIViewController {
     private func showPayViewController(){
         
         ///language по-умолчанию русский язык
-        let language = InplatCheckoutCoreSdkLanguage.ru
+        let language = DBSCheckoutCoreSdkLanguage.ru
         
         ///ID платежа, подлежащего оплате
         let paymentID = "payment_id"
         
         ///Среда, используемая в SDK
-        let environment = InplatCheckoutCoreSdkEnvironment.merch
+        let environment = DBSCheckoutCoreSdkEnvironment.merch
         
         ///Создать конфигурацию и экземпляр SDK
-        let configuration = InplatCheckoutCoreSdkConfiguration(paymentId: paymentID, environment: environment, language: language)
-        let sdk = InplatCheckoutSdk(configuration: configuration)
+        let configuration = DBSCheckoutCoreSdkConfiguration(paymentId: paymentID, environment: environment, language: language)
+        let sdk = DBSCheckoutSdk(configuration: configuration)
         
         sdk.presentCheckoutView(on: self,
                                 dismissButtonType: .close,

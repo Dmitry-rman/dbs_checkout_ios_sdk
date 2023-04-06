@@ -1,4 +1,0 @@
-framework module InplatCheckout {
-  header "InplatCheckout-Swift.h"
-  requires objc
-}

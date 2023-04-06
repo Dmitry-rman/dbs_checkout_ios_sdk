@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import InplatCheckout
-import InplatCheckoutCore
+import DBSCheckout
+import DBSCheckoutCore
 
 struct ContentView: View {
     
@@ -28,21 +28,21 @@ struct ContentView: View {
     private var paymentView: some View{
         
         ///language по-умолчанию русский язык
-        let language = InplatCheckoutCoreSdkLanguage.ru
+        let language = DBSCheckoutCoreSdkLanguage.ru
         
         ///ID платежа, подлежащего оплате
         let paymentID = "payment_id"
         
         ///Среда, используемая в SDK
-        let environment = InplatCheckoutCoreSdkEnvironment.merch
+        let environment = DBSCheckoutCoreSdkEnvironment.merch
         
         ///Создать конфигурацию и экземпляр SDK
-        let configuration = InplatCheckoutCoreSdkConfiguration(paymentId: paymentID, environment: environment, language: language)
-        let sdk = InplatCheckoutSdk(configuration: configuration)
+        let configuration = DBSCheckoutCoreSdkConfiguration(paymentId: paymentID, environment: environment, language: language)
+        let sdk = DBSCheckoutSdk(configuration: configuration)
         
         ///Создать SwiftUI View с флоу оплаты
-        return sdk.createCheckoutView(dismissButtonType:  InplatCheckoutSdk.DismissButtonType.close,
-                                      presentationType:  InplatCheckoutSdk.PresentationType.sheet)
+        return sdk.createCheckoutView(dismissButtonType:  DBSCheckoutSdk.DismissButtonType.close,
+                                      presentationType:  DBSCheckoutSdk.PresentationType.sheet)
     }
 }
 
