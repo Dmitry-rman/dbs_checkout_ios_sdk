@@ -22,6 +22,8 @@
 		0A3B864929DD844A00C85FA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B864729DD844A00C85FA8 /* Main.storyboard */; };
 		0A3B864B29DD844B00C85FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B864A29DD844B00C85FA8 /* Assets.xcassets */; };
 		0A3B864E29DD844B00C85FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3B864C29DD844B00C85FA8 /* LaunchScreen.storyboard */; };
+		0A423E5C29DE9F6900BABEF4 /* TinkoffASDKCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0A423E5B29DE9F6900BABEF4 /* TinkoffASDKCore */; };
+		0A423E5E29DE9F6900BABEF4 /* TinkoffASDKUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0A423E5D29DE9F6900BABEF4 /* TinkoffASDKUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,7 +65,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A20378729DDC4A9000E1569 /* IPTCheckoutSDK.xcframework in Frameworks */,
+				0A423E5C29DE9F6900BABEF4 /* TinkoffASDKCore in Frameworks */,
 				0A20378529DDC4A9000E1569 /* IPTCheckoutCore.xcframework in Frameworks */,
+				0A423E5E29DE9F6900BABEF4 /* TinkoffASDKUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +160,10 @@
 			dependencies = (
 			);
 			name = IPTSampleAppSUI;
+			packageProductDependencies = (
+				0A423E5B29DE9F6900BABEF4 /* TinkoffASDKCore */,
+				0A423E5D29DE9F6900BABEF4 /* TinkoffASDKUI */,
+			);
 			productName = IPSSampleApp;
 			productReference = 0A17927D29CDCB7B00CCBD12 /* IPTSampleAppSUI.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +217,7 @@
 			mainGroup = 0A17927429CDCB7B00CCBD12;
 			packageReferences = (
 				0A048CDE29DD9524004223B7 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */,
+				0A423E5A29DE9F6900BABEF4 /* XCRemoteSwiftPackageReference "AcquiringSdk_IOS" */,
 			);
 			productRefGroup = 0A17927E29CDCB7B00CCBD12 /* Products */;
 			projectDirPath = "";
@@ -553,6 +562,14 @@
 				minimumVersion = 0.1.0;
 			};
 		};
+		0A423E5A29DE9F6900BABEF4 /* XCRemoteSwiftPackageReference "AcquiringSdk_IOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tinkoff-mobile-tech/AcquiringSdk_IOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -560,6 +577,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0A048CDE29DD9524004223B7 /* XCRemoteSwiftPackageReference "inplat_checkout_ios_sdk" */;
 			productName = IPTCheckout;
+		};
+		0A423E5B29DE9F6900BABEF4 /* TinkoffASDKCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A423E5A29DE9F6900BABEF4 /* XCRemoteSwiftPackageReference "AcquiringSdk_IOS" */;
+			productName = TinkoffASDKCore;
+		};
+		0A423E5D29DE9F6900BABEF4 /* TinkoffASDKUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A423E5A29DE9F6900BABEF4 /* XCRemoteSwiftPackageReference "AcquiringSdk_IOS" */;
+			productName = TinkoffASDKUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
