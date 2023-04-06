@@ -17,7 +17,7 @@
                BlueprintIdentifier = "0A3B863E29DD844A00C85FA8"
                BuildableName = "IPTSampleUIKit+SPM.app"
                BlueprintName = "IPTSampleUIKit+SPM"
-               ReferencedContainer = "container:IPTSampleApp.xcodeproj">
+               ReferencedContainer = "container:SampleApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "0A3B863E29DD844A00C85FA8"
             BuildableName = "IPTSampleUIKit+SPM.app"
             BlueprintName = "IPTSampleUIKit+SPM"
-            ReferencedContainer = "container:IPTSampleApp.xcodeproj">
+            ReferencedContainer = "container:SampleApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "0A3B863E29DD844A00C85FA8"
             BuildableName = "IPTSampleUIKit+SPM.app"
             BlueprintName = "IPTSampleUIKit+SPM"
-            ReferencedContainer = "container:IPTSampleApp.xcodeproj">
+            ReferencedContainer = "container:SampleApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
