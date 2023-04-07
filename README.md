@@ -22,10 +22,25 @@ SDK состоит из библиотеки ядра (**DBSCheckoutCore**) и �
 
 ## Подключение
 ### Через XCode и xcframeworks
-В настоящий момент SDK подключается с помощью непосредственного добавления DBSCheckoutCore.xcframework и DBSCheckoutSDK.xcframework в проект.
-Это можно сделать, добавив ссылки на библиотеку в секцию **Frameworks, Libraries and Embedded Content**:
+SDK можно подключить с помощью непосредственного добавления **DBSCheckoutCore.xcframework** и **DBSCheckoutSDK.xcframework** в проект.
+Для этого нужно скачать архивы  **DBSCheckoutCore.xcframework.zip** и **DBSCheckoutSDK.xcframework.zip** из **Release** секции gitHub репозиторя, распаковать их и добавить ссылки на библиотеки в секцию **Frameworks, Libraries and Embedded Content**:
 
 ![img-xcode-xcframeworks]
+
+### Через добавление зависимости **SPM**
+Для того, чтобы подключить в проект **DBS Checkout SDK** через Swift Package Manager в секции **Frameworks, Libraries and Embedded Content** нужно нажать на "+" и выбрать **Add Package Dependency**: 
+
+![img-xcode-spm1]
+
+Далее вбить в строку поиска "https://github.com/Dmitry-rman/dbs_checkout_ios_sdk", выбрать его из списка результатов и добавить в нужный проект:
+
+![img-xcode-spm2]
+
+В результате в левом окне списка файлов появится секция **Package Dependencies** с номером совместимой версии, которая была указана:
+
+![img-xcode-spm3]
+
+P.S.: Вы всегда можете обновить SPM пакет до совместимого, щелкнув на него правой кнопкой мыши и выбрав пункт "Update Package".
 
 ## Подготовка к работе
 
@@ -150,4 +165,8 @@ struct ContentView: View {
 По всем возникающим вопросам, доработкам и предложениям обращаться на почту checkout@inplattech.ru
 
 [img-xcode-xcframeworks]: https://github.com/Dmitry-rman/dbs_checkout_ios_sdk/blob/main/images/xcode_xcframeworks.png?raw=true
+[img-xcode-spm1]: https://github.com/Dmitry-rman/dbs_checkout_ios_sdk/blob/main/images/xcode_spm1.png?raw=true
+[img-xcode-spm2]: https://github.com/Dmitry-rman/dbs_checkout_ios_sdk/blob/main/images/xcode_spm2.png?raw=true
+[img-xcode-spm3]: https://github.com/Dmitry-rman/dbs_checkout_ios_sdk/blob/main/images/xcode_spm3.png?raw=true
 [inplattech-checkout-help]: https://inplat-tech.ru/docs/merchantapi/
+
