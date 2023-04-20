@@ -97,23 +97,22 @@ P.S.: Вы всегда можете обновить SPM пакет до сов
         ///language по-умолчанию русский язык
         let language = DBSCheckoutCoreSdkLanguage.ru
         
-        ///ID платежа, подлежащего оплате
-        let paymentID = "payment_id"
+        ///ID заказа платежа
+        let orderID = "order_id"
         
         ///Среда, используемая в SDK
         let environment = DBSCheckoutCoreSdkEnvironment.merch
-
+        
         ///Создать конфигурацию и экземпляр SDK
-        let configuration = DBSCheckoutCoreSdkConfiguration(paymentId: paymentID,
-                                                             environment: environment,
-                                                                language: language)
+        let configuration = DBSCheckoutCoreSdkConfiguration(orderId: orderID, environment: environment, language: language)
         let sdk = DBSCheckoutSdk(configuration: configuration)
         
-        ///Показать флоу оплаты, где self - это экземпляр UIViewController
         sdk.presentCheckoutView(on: self,
                                 dismissButtonType: .close,
                                 presentationType: .sheet,
-                                completionHandler: {})
+                                completionHandler: { result in
+            debugPrint("Payment flow finished with \(result)")
+        })
 ```
 
 ### Пример использования в SwiftUI приложении
@@ -162,7 +161,7 @@ struct ContentView: View {
 
 ## Поддержка
 
-По всем возникающим вопросам, доработкам и предложениям обращаться на почту checkout@inplattech.ru
+По всем возникающим вопросам, доработкам и предложениям обращаться на почту dskudryavtsev@gmail.com
 
 [img-xcode-xcframeworks]: https://github.com/Dmitry-rman/dbs_checkout_ios_sdk/blob/main/images/xcode_xcframeworks.png?raw=true
 [img-xcode-spm1]: https://github.com/Dmitry-rman/dbs_checkout_ios_sdk/blob/main/images/xcode_spm1.png?raw=true

@@ -27,20 +27,22 @@ class ViewController: UIViewController {
         ///language по-умолчанию русский язык
         let language = DBSCheckoutCoreSdkLanguage.ru
         
-        ///ID платежа, подлежащего оплате
-        let paymentID = "payment_id"
+        ///ID заказа платежа
+        let orderID = "order_id"
         
         ///Среда, используемая в SDK
         let environment = DBSCheckoutCoreSdkEnvironment.merch
         
         ///Создать конфигурацию и экземпляр SDK
-        let configuration = DBSCheckoutCoreSdkConfiguration(paymentId: paymentID, environment: environment, language: language)
+        let configuration = DBSCheckoutCoreSdkConfiguration(orderId: orderID, environment: environment, language: language)
         let sdk = DBSCheckoutSdk(configuration: configuration)
         
         sdk.presentCheckoutView(on: self,
                                 dismissButtonType: .close,
                                 presentationType: .sheet,
-                                completionHandler: {})
+                                completionHandler: { result in
+            debugPrint("Payment flow finished with \(result)")
+        })
     }
 
 }
