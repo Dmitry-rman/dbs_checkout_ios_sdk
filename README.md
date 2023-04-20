@@ -140,21 +140,24 @@ struct ContentView: View {
         ///language по-умолчанию русский язык
         let language = DBSCheckoutCoreSdkLanguage.ru
         
-        ///ID платежа, подлежащего оплате
-        let paymentID = "payment_id"
+        ///ID заказа платежа
+        let orderID = "order_id"
         
         ///Среда, используемая в SDK
         let environment = DBSCheckoutCoreSdkEnvironment.merch
         
         ///Создать конфигурацию и экземпляр SDK
-        let configuration = DBSCheckoutCoreSdkConfiguration(paymentId: paymentID,
+        let configuration = DBSCheckoutCoreSdkConfiguration(orderId: orderID,
                                                              environment: environment,
                                                                 language: language)
         let sdk = DBSCheckoutSdk(configuration: configuration)
         
         ///Создать и вернуть SwiftUI View с флоу оплаты SDK
         return sdk.createCheckoutView(dismissButtonType:  DBSCheckoutSdk.DismissButtonType.close,
-                                       presentationType:  DBSCheckoutSdk.PresentationType.sheet)
+                                       presentationType:  DBSCheckoutSdk.PresentationType.sheet,
+                                       completionHandler: { result in
+            debugPrint("Payment flow finished with \(result)")
+        })
     }
 }
 ```
