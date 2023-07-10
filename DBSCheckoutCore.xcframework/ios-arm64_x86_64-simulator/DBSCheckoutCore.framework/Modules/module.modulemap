@@ -1,4 +1,0 @@
-framework module DBSCheckoutCore {
-  header "DBSCheckoutCore-Swift.h"
-  requires objc
-}
